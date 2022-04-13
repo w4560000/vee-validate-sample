@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    原生validate
+    原生validate(required)
     <input name="data1" type="text" v-model="data1" v-validate="`required`" />
     <br />
     <span class="error">{{ errors.first("data1") }}</span>
 
     <br />
-    全局註冊的validate
+    全局註冊的validate (需>0)
     <input
       name="data2"
       type="text"
